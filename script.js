@@ -1,14 +1,34 @@
+//Calls local storage 
 window.localStorage
 console.log(localStorage);
 
+//Calls moment.js 
 var moment = moment(); 
+
+
 var timeDiv = $("<div>").att("class","time-block");
 var pastTasks = $("<div>").att("class","past");
 var presentTasks = $("<div>").att("class","present");
 var futureTasks = $("<div>").att("class","future");
-var saveButton = $("<div>").att("class", "saveBtn")
-var userTimes = //create user times array 
+var saveButton = $("<div>").att("class", "saveBtn");
+var userTimes = ["9:00 am", "10:00 am", "11:00 am", "12:00 pm", "1:00 pm", "2:00 pm", "3:00 pm", "4:00 pm", "5:00 pm"]; 
 
+//Function to loop through times 
+function genTimes (); {
+    var userTimes;
+    for (i = 0; i < userTimes.length; i++) {
+      text += userTimes[i] + "<br>";
+    }
+}
+
+//Dynamically created table 
+var createRow = function (){
+var tRow = $("<tr>");
+var pastTd = $("<td>").append(presentTasks);
+var pastTd = $("<td>").append(futureTasks);
+var pastTd = $("<td>").append(saveButton);
+
+}
 
 
 
