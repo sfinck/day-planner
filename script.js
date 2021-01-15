@@ -5,34 +5,35 @@ function displayCount() {
     $("#currentDay").text(currentTime);
 }
 
-//create function that gen after user click save button 
-//insert 'this' method
+//create function that gen after user clicks save button 
+//insert 'this' method in select time variable to create an ID 
+//called split method to display response from user input when button is clicked 
 //create var for time user selected + user input 
 //store data in local storage 
-$(".btn-btn-primary").on("click", function(){
+$(".btn btn-primary").on("click", function () {
 
-var selTime = $(this).attr("class").split("-")[0];
-console.log(this);
-var userInput = $(`.${selTime}-text`).val();
+    var selTime = $(this).attr("id").split("-")[0];
+    var userInput = $(`#${selTime}-task`).val();
 
-console.log(selTime, userInput);
-localStorage.setItem(selTime, userInput);
-}); 
-
-
-
+    console.log(selTime, userInput);
+    (console.error);
+    localStorage.setItem(selTime, userInput);
+});
 
 //insert condition that changes color of time block according to past, present, future tasks
 
-// function displayblock() {
-//     var relTask = moment().hour();
-//     for (i=0; i < relTask.length; i++)
+function blockColor() {
+    var relTask = moment().hour();
+    for (i = 9; i <= 18; i++) {
+    }
+    if (relTask === 1) {
+    }
 
-//     if (relTask ===  )
-
-// }
 
 
+}
+
+//commented code out to try with tutor later 
 // window.localStorage
 // console.log(localStorage);
 
@@ -59,11 +60,3 @@ localStorage.setItem(selTime, userInput);
 // var pastTd = $("<td>").append(saveButton);
 
 // }
-
-//Create a form with 9:00 am - 5:00 pm blocks 
-//According to time expiration my blocks need to change different colors: grey- expired, red- current, green-future
-//When the file is open the current date is displayed
-//When I scroll down I see blocks of times 
-//When I click on a time block I can enter an event 
-//When I save the event it is saved in local storage 
-//When I refresh the page the saved event stays 
