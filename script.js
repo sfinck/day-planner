@@ -5,11 +5,32 @@ function displayCount() {
     $("#currentDay").text(currentTime);
 }
 
-//insert 'this' method - holds element requested 
+//create function that gen after user click save button 
+//insert 'this' method
+//create var for time user selected + user input 
+//store data in local storage 
+$(".btn-btn-primary").on("click", function(){
+
+var selTime = $(this).attr("class").split("-")[0];
+console.log(this);
+var userInput = $(`.${selTime}-text`).val();
+
+console.log(selTime, userInput);
+localStorage.setItem(selTime, userInput);
+}); 
 
 
-//insert conditiont that changes color of time block according to past, present, future tasks
 
+
+//insert condition that changes color of time block according to past, present, future tasks
+
+// function displayblock() {
+//     var relTask = moment().hour();
+//     for (i=0; i < relTask.length; i++)
+
+//     if (relTask ===  )
+
+// }
 
 
 // window.localStorage
