@@ -1,14 +1,19 @@
+//Displays current date and time using moment.js file 
 var timeTracker = setInterval(displayCount, 1000);
 function displayCount() {
     var currentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
     $("#currentDay").text(currentTime);
 }
 
+//insert 'this' method - holds element requested 
+
+
+//insert conditiont that changes color of time block according to past, present, future tasks
+
+
 
 // window.localStorage
 // console.log(localStorage);
-
-
 
 // var timeDiv = $("<div>").att("class","time-block");
 // var pastTasks = $("<div>").att("class","past");
@@ -17,7 +22,7 @@ function displayCount() {
 // var saveButton = $("<div>").att("class", "saveBtn");
 // var userTimes = ["9:00 am", "10:00 am", "11:00 am", "12:00 pm", "1:00 pm", "2:00 pm", "3:00 pm", "4:00 pm", "5:00 pm"]; 
 
-// // Function to loop through times 
+// Function to loop through times 
 // function genTimes (); {
 //     var userTimes;
 //     for (i = 0; i < userTimes.length; i++) {
@@ -33,9 +38,6 @@ function displayCount() {
 // var pastTd = $("<td>").append(saveButton);
 
 // }
-
-
-
 
 //Create a form with 9:00 am - 5:00 pm blocks 
 //According to time expiration my blocks need to change different colors: grey- expired, red- current, green-future
