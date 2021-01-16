@@ -5,11 +5,7 @@ function displayCount() {
     $("#currentDay").text(currentTime);
 }
 
-//create function that gen after user clicks save button 
-
-//create var for time user selected + user input 
-//store data in local storage 
-
+//Saves user task and the current time block
 $(".saveBtn").click(function () {
     var currentID = $(this).attr("data-time");
     var userInput = $("#task-" + currentID).val();
@@ -21,65 +17,21 @@ $(".saveBtn").click(function () {
     localStorage.setItem(timeBlock, userInput)
 })
 
-//-----------------------------------------------------------------------------------------
-//     var selTime = $(this).attr("id").split("-")
-//     console.log(this)
+//insert for loop that changes color of time block according to past, present, future tasks
 
+var currentBlock = moment().hour();
+console.log(currentBlock);
 
+for (let i = 9; i <= 18; i++){
+    if (currentBlock < i) {
+        $(".userTask").addClass("bg-dark");
+    }
+    else if (currentBlock === i) {
+        $(".userTask").addClass("bg-success");
+    }
+    else { 
+        $(".userTask").addClass("bg-danger");
 
-//     var enterTask = $(this).attr("id").split("-")[0];
+    }
+}
 
-
-//     var selTime = $(this).attr("id").split("-")[0];
-//     var userInput = $(`#${selTime}-text`).val();
-
-//     console.log(selTime, userInput);
-//     (console.error);
-//     localStorage.setItem(selTime, userInput); 
-// }
-
-// $("#saveBtn").click(function () {
-
-//     var selTime = $(this).attr("id").split("-")[0];
-//     var userInput = $(`#${selTime}-text`).val();
-
-//     console.log(selTime, userInput);
-//     (console.error);
-//     localStorage.setItem(selTime, userInput);
-// });
-//-----------------------------------------------------------------------------------------
-//insert condition that changes color of time block according to past, present, future tasks
-
-// function blockColor() {
-//     var relTask = moment().hour();
-//     for (i = 9; i <= 18; i++) {
-//     }
-//     if (relTask === 1) {
-//     }
-// }
-// ----------------------------------------------------------------------------------------
-//commented code out to try with tutor later 
-// window.localStorage
-// console.log(localStorage);
-
-// var timeDiv = $("<div>").att("class","time-block");
-// var pastTasks = $("<div>").att("class","past");
-// var presentTasks = $("<div>").att("class","present");
-// var futureTasks = $("<div>").att("class","future");
-// var saveButton = $("<div>").att("class", "saveBtn");
-// var userTimes = ["9:00 am", "10:00 am", "11:00 am", "12:00 pm", "1:00 pm", "2:00 pm", "3:00 pm", "4:00 pm", "5:00 pm"]; 
-
-// Function to loop through times 
-// function genTimes (); {
-//     var userTimes;
-//     for (i = 0; i < userTimes.length; i++) {
-//       text += userTimes[i] + "<br>";
-//     }
-// }
-
-// // Dynamically created table 
-// var createRow = function (){
-// var tRow = $("<tr>");
-// var pastTd = $("<td>").append(presentTasks);
-// var pastTd = $("<td>").append(futureTasks);
-// var pastTd = $("<td>").append(saveButton);
