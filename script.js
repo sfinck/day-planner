@@ -6,23 +6,19 @@ function displayCount() {
 }
 
 //create function that gen after user clicks save button 
-//insert 'this' method in select time variable to create an ID 
-//called split method to display response from user input when button is clicked 
+
 //create var for time user selected + user input 
 //store data in local storage 
 
-// var button = document.getElementById ("saveBtn").addEventListener ("click", saveTask);
-
-$("#saveBtn").click(function () {
-    var userInput = $(".userTask").val();
-    var timeBlock = $("#setTime").val();
+$(".saveBtn").click(function () {
+    var currentID = $(this).attr("data-time");
+    var userInput = $("#task-" + currentID).val();
+    console.log(this)
+    var timeBlock = $(this).attr("data-time");
     console.log(userInput);
     console.log(timeBlock);
-    
-    localStorage.setItem(userInput, timeBlock)
-    // var timeBlock = $("#timeBlock").val();
-    // console.log(timeBlock, userInput)
-    // localStorage.setItem(timeBlock, userInput)
+
+    localStorage.setItem(timeBlock, userInput)
 })
 
 //-----------------------------------------------------------------------------------------
