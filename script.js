@@ -10,29 +10,58 @@ function displayCount() {
 //called split method to display response from user input when button is clicked 
 //create var for time user selected + user input 
 //store data in local storage 
-$(".btn btn-primary").on("click", function () {
 
-    var selTime = $(this).attr("id").split("-")[0];
-    var userInput = $(`#${selTime}-task`).val();
+// var button = document.getElementById ("saveBtn").addEventListener ("click", saveTask);
 
-    console.log(selTime, userInput);
-    (console.error);
-    localStorage.setItem(selTime, userInput);
-});
+$("#saveBtn").click(function () {
+    var userInput = $(".userTask").val();
+    var timeBlock = $("#setTime").val();
+    console.log(userInput);
+    console.log(timeBlock);
+    
+    localStorage.setItem(userInput, timeBlock)
+    // var timeBlock = $("#timeBlock").val();
+    // console.log(timeBlock, userInput)
+    // localStorage.setItem(timeBlock, userInput)
+})
 
+//-----------------------------------------------------------------------------------------
+//     var selTime = $(this).attr("id").split("-")
+//     console.log(this)
+
+
+
+//     var enterTask = $(this).attr("id").split("-")[0];
+
+
+//     var selTime = $(this).attr("id").split("-")[0];
+//     var userInput = $(`#${selTime}-text`).val();
+
+//     console.log(selTime, userInput);
+//     (console.error);
+//     localStorage.setItem(selTime, userInput); 
+// }
+
+// $("#saveBtn").click(function () {
+
+//     var selTime = $(this).attr("id").split("-")[0];
+//     var userInput = $(`#${selTime}-text`).val();
+
+//     console.log(selTime, userInput);
+//     (console.error);
+//     localStorage.setItem(selTime, userInput);
+// });
+//-----------------------------------------------------------------------------------------
 //insert condition that changes color of time block according to past, present, future tasks
 
-function blockColor() {
-    var relTask = moment().hour();
-    for (i = 9; i <= 18; i++) {
-    }
-    if (relTask === 1) {
-    }
-
-
-
-}
-
+// function blockColor() {
+//     var relTask = moment().hour();
+//     for (i = 9; i <= 18; i++) {
+//     }
+//     if (relTask === 1) {
+//     }
+// }
+// ----------------------------------------------------------------------------------------
 //commented code out to try with tutor later 
 // window.localStorage
 // console.log(localStorage);
@@ -58,5 +87,3 @@ function blockColor() {
 // var pastTd = $("<td>").append(presentTasks);
 // var pastTd = $("<td>").append(futureTasks);
 // var pastTd = $("<td>").append(saveButton);
-
-// }
