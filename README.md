@@ -2,11 +2,11 @@
 
 ## Table of Contents 
 * [Description](#description)
-* [User Story](#userstory)
-* [Acceptance Criteria](#acceptancecriteria)
+* [User Story](#story)
+* [Acceptance Criteria](#criteria)
 * [Usage](#usage)
-* [Deployed Link](#deployed)
 * [Installation](#installation)
+* [Deployed Link](#deployed)
 
 ## Description
 
@@ -17,7 +17,7 @@ My motivation for building this application was to give the user an easy way to 
 My biggest take-away from this project is jQuery is an extremely simplifeid way to code in javascript. It saves a lot of time and displays the code in a way that is easier to read for another developer, grader, etc. I also learned that using different javascript libraries is a quick way to use a reference for a variable. For example, if the coder would have to come up with the current time on their own, instead of using the reference it would take significatly longer.  
 
 
-## User Story 
+## Story 
 
 ```
 AS AN employee with a busy schedule
@@ -25,7 +25,7 @@ I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
 ```
 
-## Acceptance Criteria
+## Criteria
 
 ```
 GIVEN I am using a daily planner to create a schedule
@@ -56,3 +56,4 @@ THEN the saved events persist
 * Added styling on index.html using assets folder and other basic CSS techniques 
 
 ## Deployed 
+https://sfinck.github.io/day-planner/
