@@ -18,9 +18,11 @@ $(".saveBtn").click(function () {
 })
 
 //insert for loop that changes color of time block according to past, present, future tasks
-
 var currentBlock = moment().hour();
 console.log(currentBlock);
+
+localStorage.getItem(timeBlock[0]);
+console.log(timeBlock[0]);
 
 for (let i = 9; i <= 18; i++){
     if (currentBlock < i) {
