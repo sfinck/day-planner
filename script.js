@@ -24,14 +24,14 @@ console.log(currentBlock);
 localStorage.getItem(timeBlock[0]);
 console.log(timeBlock[0]);
 
-for (let i = 9; i <= 18; i++){
+for (let i = 9; i <= 18; i++) {
     if (currentBlock < i) {
         $(".userTask").addClass("bg-dark");
     }
     else if (currentBlock === i) {
         $(".userTask").addClass("bg-success");
     }
-    else { 
+    else {
         $(".userTask").addClass("bg-danger");
 
     }
