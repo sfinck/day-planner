@@ -8,10 +8,9 @@
 * [Deployed Link](#deployed)
 * [Installation](#installation)
 
-
-
 ## Description
 
+The day planner is a way for the user to quickly add tasks throughout the work day. When the user opens the page the application displays a series of input boxes that are red, green or grey depending upon the time of the day. The red input boxes are for future tasks, the green are for current tasks and the grey are for expired tasks. Located on the left of the input boxes are times that indicate when the user plans to complete the task. Located on the right of the input boxes are save buttons which allows the user to save the tasks, even when they refresh, the tasks do not go away. In addition to them clicking the save button the tasks are stored on the local storage. In order to build this app I used a combination of HTML, CSS boostrap, Javascript and jQuery. Some of the challenges I faced were creating a for loop to change the color of the input boxes depending on the current time.
 
 My motivation for building this application was to give the user an easy way to log a to-do list that they can monitor throughout the work day. It solves the problem of writing the tasks down and losing the paper, trying to remember tasks off the top of your head and also color codes so the user is able to differntiate what is due and when. 
 
@@ -47,8 +46,6 @@ THEN the saved events persist
 ## Usage 
 ![day-planner-usage](https://user-images.githubusercontent.com/74476090/104828020-92d16800-582a-11eb-99b3-0ca9ca00a131.png)
 
-## Deployed 
-
 ## Installation 
 * Created index.html, style.css, script.js and assets folder (images)
 * Linked bootstrap ref, moment.js, javascript and jQuery files to index.html
@@ -58,3 +55,4 @@ THEN the saved events persist
 * In javascript file, created a for loop to change the color of the input boxes to red, green or grey according to the current time 
 * Added styling on index.html using assets folder and other basic CSS techniques 
 
+## Deployed 
