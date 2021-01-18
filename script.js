@@ -10,7 +10,7 @@ for (let x = 0; x <= localStorage.length; x++) {
     let text = localStorage.getItem(key);
     console.log(key)
     console.log(text)
-    $("#task-" + x).val(text);
+    $("#task-" + key).val(text);
 }
 
 //Saves user task and the current time block
