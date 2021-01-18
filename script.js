@@ -5,6 +5,14 @@ function displayCount() {
     $("#currentDay").text(currentTime);
 }
 
+for (let x = 0; x <= localStorage.length; x++) {
+    let key = localStorage.key(x);
+    let text = localStorage.getItem(key);
+    console.log(key)
+    console.log(text)
+    $("#task-" + x).val(text);
+}
+
 //Saves user task and the current time block
 $(".saveBtn").click(function () {
     var currentID = $(this).attr("data-time");
@@ -20,18 +28,16 @@ $(".saveBtn").click(function () {
 //insert for loop that changes color of time block according to past, present, future tasks
 var currentBlock = moment().hour();
 console.log(currentBlock);
-var userTime = $(".data-time")
-console.log(userTime);
 
 for (let i = 9; i <= 18; i++) {
     if (currentBlock < i) {
-        $(".userTask").addClass("bg-dark");
+        $("#task-" + i).addClass("bg-success");
     }
     else if (currentBlock === i) {
-        $(".userTask").addClass("bg-danger");
+        $("#task-" + i).addClass("bg-danger");
     }
     else {
-        $(".userTask").addClass("bg-success");
+        $("#task-" + i).addClass("bg-dark");
     }
 }
 
