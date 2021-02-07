@@ -49,10 +49,10 @@ Wireframe:
 ![day-planner-usage](https://user-images.githubusercontent.com/74476090/104828020-92d16800-582a-11eb-99b3-0ca9ca00a131.png)
 
 Deployed application: 
-![day-planner-deployed](assets/day-planner.png)
+![alt text](assets/day-planner.png)
 
 When user refreshes page, to-do list is saved: 
-![local-storage](assets/local-storage.png)
+![alt text](assets/local-storage.png)
 
 ## Installation 
 * Created index.html, style.css, script.js and assets folder (images)
