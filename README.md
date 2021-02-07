@@ -46,11 +46,13 @@ THEN the saved events persist
 
 ## Usage 
 Wireframe: 
-![alt text](./assets/day-planner-usage.png)
-Deployed application: 
-![alt text](./assets/day-planner.png)
+![alt text](assets/day-planner-usage.png)
+
+Deployed application:
+![alt text](assets/day-planner.png)
+
 When user refreshes page, to-do list is saved: 
-![alt text](./assets/local-storage.png)
+![alt text](assets/local-storage.png)
 
 ## Installation 
 * Created index.html, style.css, script.js and assets folder (images)
