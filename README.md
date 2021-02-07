@@ -46,7 +46,7 @@ THEN the saved events persist
 
 ## Usage 
 Wireframe: 
-![day-planner-usage](https://user-images.githubusercontent.com/74476090/104828020-92d16800-582a-11eb-99b3-0ca9ca00a131.png)
+![alt text](assets/day-planner-usage.png)
 
 Deployed application: 
 ![alt text](assets/day-planner.png)
