@@ -7,6 +7,7 @@
 * [Usage](#usage)
 * [Installation](#installation)
 * [Deployed Link](#deployed)
+* [License](#license)
 * [Contact](#contact)
 
 ## Description
@@ -65,6 +66,9 @@ When user refreshes page, to-do list is saved:
 
 ## Deployed 
 https://sfinck.github.io/day-planner/
+
+## License 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contact 
 sarahfinck95@gmail.com
