@@ -7,6 +7,7 @@
 * [Usage](#usage)
 * [Installation](#installation)
 * [Deployed Link](#deployed)
+* [Contact](#contact)
 
 ## Description
 
@@ -44,7 +45,14 @@ THEN the saved events persist
 ```
 
 ## Usage 
+Wireframe: 
 ![day-planner-usage](https://user-images.githubusercontent.com/74476090/104828020-92d16800-582a-11eb-99b3-0ca9ca00a131.png)
+
+Deployed application: 
+![day-planner-deployed](assets/day-planner.png)
+
+When user refreshes page, to-do list is saved: 
+![local-storage](assets/local-storage.png)
 
 ## Installation 
 * Created index.html, style.css, script.js and assets folder (images)
@@ -57,3 +65,6 @@ THEN the saved events persist
 
 ## Deployed 
 https://sfinck.github.io/day-planner/
+
+## Contact 
+sarahfinck95@gmail.com
